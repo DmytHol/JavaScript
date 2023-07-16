@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB-115 Final Project</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    
+    <form>
+        
+        <fieldset>
+            <div class="banner">
+                <h1>Dmytro Holovnia</h1>
+                <h2>Resume On The Fly Example</h2>
+                <h2>Build Your Resume</h2>
+        
+            </div>
+            
+            <p>
+                <label>Enter your full name</label><br>
+                <input type = "text" id = "userName" placeholder="Dawn Johnson"><br>
+
+                <label>Enter your city</label><br>
+                <input type = "text" id = "userCity" placeholder="Sometown"><br>
+
+                <label>Enter your state</label><br>
+                <input type = "text" id = "userState" placeholder="OH"><br>
+
+                <label>Enter your zip code</label><br>
+                <input type = "text" id = "userZip" placeholder="43085"><br>
+
+                <label>Enter your phone</label><br>
+                <input type = "tel" id = "userPhone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="111-222-3333"><br>
+
+                <label>Enter your email</label><br>
+                <input type = "email" id = "userEmail" placeholder="dj@somedomain.com"><br>
+
+                <label>Enter social media links</label><br>
+                <input type = "url" id = "userSocialMedia" placeholder="@twitterhandle"><br>
+
+                <label>Enter portfolio links</label><br>
+                <input type = "url" id = "userPortfolio" placeholder="http://portfoliolink"><br><br><br>
+
+                <!-- Profile information --> 
+                <label>Enter profile details</label><br>
+                <textarea id = "profile" rows="5" cols="25" placeholder="Highlight specific skills, knowledge or industry experience."></textarea><br><br>
+                
+                <!-- First job --> 
+                <label>Enter the most recent employment experience</label><br>
+                <label>Employer:</label><br>
+                <input type = "text" id = "position1" placeholder="Company Name and Location"><br>
+                <label>Start Date:</label><br>
+                <input type = "date"  id = "job1Start"><br>
+                <label>End Date:</label><br>
+                <input type = "date" id = "job1End"><br>
+                <label>Details</label><br>
+                <textarea id = "details1" rows="5" cols="25" placeholder="position and responsibility"></textarea><br><br>
+
+                <!-- Second job --> 
+                <label>Prior employment experience</label><br>
+                <label>Position:</label><br>
+                <input type = "text" id = "position2" placeholder="Company name 2"><br>
+                <label>Start Date:</label><br>
+                <input type = "date" id = "job2Start"><br>
+                <label>End Date:</label><br>
+                <input type = "date" id = "job2End"><br>
+                <label>Details</label><br>
+                <textarea id = "details2" rows="5" cols="25" placeholder="position and responsibility"></textarea><br><br>
+
+                <!-- Third job --> 
+                <label>More prior employment experience</label><br>
+                <label>Position:</label><br>
+                <input type = "text" id = "position3" placeholder="Company name 3"><br>
+                <label>Start Date:</label><br>
+                <input type = "date" id = "job3Start"><br>
+                <label>End Date:</label><br>
+                <input type = "date" id = "job3End"><br>
+                
+                <label>Details</label><br>
+                <textarea id = "details3" rows="5" cols="25" placeholder="position and responsibility"></textarea><br><br>
+
+                <!-- Education --> 
+                <label>Education</label><br>
+                <label>Start Date:</label><br>
+                <input type = "date" id = "eduStart"><br>
+                <label>End Date:</label><br>
+                <input type = "date" id = "eduEnd"><br>
+                
+                <label>Details</label><br>
+                <textarea id = "details4" rows="5" cols="25" placeholder="School and Location. Field of Study"></textarea><br><br>
+
+                <!-- Skills -->
+                <label>Skills:  </label><br>
+                <input type = "checkbox" id = "coding" name="skills" value="coding skills">
+                <label for="coding">coding skills</label><br>
+                <input type = "checkbox" id = "writing" name="skills" value="writing skills">
+                <label>writing skills</label><br>
+                <input type = "checkbox" id = "interpersonal" name="skills" value="interpersonal skills">
+                <label>interpersonal skills</label><br><br>
+                
+                <!-- Technical skills -->
+                <label>Technical skills:  </label><br>
+                <input type = "checkbox" id = "javaScript" name="technicalSkills" value="Java Script">
+                <label for="javaScript">Java Script</label><br>
+                <input type = "checkbox" id = "php" name="technicalSkills" value="PHP">
+                <label for="php">PHP</label><br>
+                <input type = "checkbox" id = "html" name="technicalSkills" value="HTML">
+                <label for="html">HTML</label><br><br>
+
+                   <!-- Business references --> 
+                <label>Business references:</label><br>
+            
+                <textarea id = "business" rows="5" cols="25" placeholder="Enter business references: Name, email, phone number"></textarea><br><br>
+
+                <!-- Button -->
+                <button type = "button" id = "createResume">Create Resume</button>
+            </p>
+    </fieldset>
+    <script src = "projectJS.js"></script>
+</body>
+</html>
