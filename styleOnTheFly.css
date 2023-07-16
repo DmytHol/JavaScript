@@ -1,0 +1,60 @@
+```css
+/* CSS styles go here */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+}
+
+#content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 32px;
+    margin: 0;
+    color: #333;
+}
+
+h2 {
+    font-size: 24px;
+    margin: 0;
+    color: #333;
+}
+
+h3 {
+    font-size: 18px;
+    margin: 0;
+    color: #333;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+p {
+    margin: 0;
+    color: #555;
+}
+
+.topright {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.topright h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.topright p {
+    margin-bottom: 5px;
+    color: #555;
+}
