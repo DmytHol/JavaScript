@@ -175,7 +175,7 @@ function displayResume(){
         a.click();
 
         // Close the window after the download link is clicked
-        flyWindow.close();
+        // flyWindow.close();
     }
    
     
