@@ -1,8 +1,7 @@
-
-
+// Event listener to trigger the displayResume function when the "createResume" button is clicked
 document.getElementById("createResume").addEventListener("click", displayResume);
 
-
+// Function to generate a dynamic HTML resume and create a downloadable Word document
 function displayResume(){
     let diamond = "&#x2B25";
     // Name section
@@ -114,15 +113,16 @@ function displayResume(){
 
 
     // Email validation
-    
     if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(document.getElementById("userEmail").value)){
         displayResume();}
     else {
+        // Show an alert if the email is not valid
          alert("Email not valid");
      }
 
-
+    // Function to display the resume in a new window
     function displayResume() {
+        // Constructing the HTML content for the resume
         email = diamond + " " + document.getElementById("userEmail").value;
 
         myText = ("<html>\n<head>\n<title>Resume</title>\n<link rel=\"stylesheet\" type=\"text/css\" href=\"styleOnTheFly.css\"></head>\n<body>\n");
@@ -164,6 +164,18 @@ function displayResume(){
 
         flyWindow = window.open('about:blank', 'myResume', 'width = 800, height =400, left=200, top =200');
         flyWindow.document.write(myText);
+        
+        // Create a downloadable Word document
+        const blob = new Blob([myText], { type: 'application/msword' });
+        const url = URL.createObjectURL(blob);
+        
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'resume.doc';
+        a.click();
+
+        // Close the window after the download link is clicked
+        flyWindow.close();
     }
    
     
